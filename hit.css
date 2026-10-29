@@ -123,6 +123,20 @@ h1,h2,h3{font-weight:900;letter-spacing:-.04em;line-height:.92}
 .q-text blockquote{font-size:var(--t-mid);line-height:1.2;font-weight:900;letter-spacing:-.03em;max-width:30ch}
 
 
+
+/* reviews */
+.rev{display:grid;grid-template-columns:repeat(12,1fr);gap:24px}
+.rev .side{grid-column:1/6;align-self:start;position:sticky;top:96px}
+.rev h2{font-size:var(--t-mid);line-height:1.05;letter-spacing:-.03em;margin-bottom:24px}
+.rev .score{font-weight:900;font-size:var(--t-d2);line-height:.9;letter-spacing:-.05em;color:var(--f-magenta)}
+.rev .count{font-size:var(--step-lead);font-weight:500;line-height:1.25;margin:16px 0 32px;max-width:14em}
+.rev .btn{background:var(--f-plum);color:#fff}
+.rev .list{grid-column:6/13;display:grid;gap:48px}
+.rev figure{display:grid;gap:12px}
+.rev blockquote{font-size:var(--step-body);line-height:1.55;max-width:52ch}
+.rev figcaption{font-weight:900;font-size:var(--step-body)}
+.rev figcaption span{font-weight:500;color:var(--muted);margin-left:8px}
+
 /* faq */
 .faq{background:var(--surface);display:grid;grid-template-columns:repeat(12,1fr);gap:24px}
 .faq h2{grid-column:1/6;font-size:var(--t-mid);line-height:1.05;letter-spacing:-.03em;align-self:start}
@@ -183,6 +197,7 @@ h1,h2,h3{font-weight:900;letter-spacing:-.04em;line-height:.92}
 @media (max-width:820px){
   .top nav a:not(.btn){display:none}
   .menu-word{display:inline}
+  .rev{display:block}.rev .side{position:static;margin-bottom:40px}.rev .list{gap:36px}
   .faq{display:block}.faq h2{margin-bottom:32px}.faq dl{gap:32px}
   .hero{min-height:560px}
   .hero::before{inset:46% 0 0 0}
