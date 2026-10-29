@@ -116,7 +116,7 @@ h1,h2,h3{font-weight:900;letter-spacing:-.04em;line-height:.92}
 
 /* quote split */
 .quote{display:grid;grid-template-columns:5fr 7fr;min-height:50svh}
-.q-who{background:var(--f-plum);color:#fff;padding:32px;display:flex;flex-direction:column;justify-content:flex-end}
+.q-who{background:var(--f-plum) var(--stage) center/cover;background-blend-mode:multiply;color:#fff;padding:32px;display:flex;flex-direction:column;justify-content:flex-end}
 .q-who b{font-weight:500;font-size:var(--step-body)}
 .q-who span{font-size:var(--step-body);opacity:.8}
 .q-text{background:var(--f-orange);color:var(--f-orange-ink);padding:48px}
